@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector Game</title>
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel=stylesheet" href="assets/css/reset.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b73f20f84b.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.js" integrity="sha256-3N7KdiCryoVRJc8YjNHjRb7oDIFzSrwea9ivm2NJtpQ=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="page-content text-center">
-        <h1 class="jumbotron">Crystal Collector</h1>
+        <h1 class="jumbotron text-center">Crystal Collector</h1>
+    <div class="container page-content">
+        
         <div id="instructions">
             <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score
+                goes above the random number.</p>
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
-        <div id="target-score">
-
-        </div>
-        <div id="game-stats">
-
+        <div class="row">
+            <div class="col-6">
+                <div id="target-score"></div>
+            </div>
+            <div class="col-6">
+                <div id="game-stats">
+                    <p id="wins">Wins: 0 </p>
+                    <p id="losses">Losses: 0 </p>
+                </div>
+            </div>
         </div>
         <div id="crystals">
-            <img id = "crystal-one" src="assets/images/ruby.png">
-            <img id = "crystal-two" src="assets/images/sapphire.jpg">
-            <img id = "crystal-three" src="assets/images/emerald.jpg">
-            <img id = "crystal-four" src="assets/images/diamond.png">
+            <img id="crystal-one" src="assets/images/ruby.png">
+            <img id="crystal-two" src="assets/images/emerald.png">
+            <img id="crystal-three" src="assets/images/sapphire.png">
+            <img id="crystal-four" src="assets/images/diamond.png">
         </div>
-        <p>Your total score is:</p>
-        <div id="player-score">
-
-        </div>
+        <p id="total-score-text">Your total score is:</p>
+        <div id="player-score"></div>
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
