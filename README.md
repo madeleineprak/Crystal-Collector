@@ -1,5 +1,5 @@
 # Crystal Collector
-This is a crystal collector game. Click [here](https://madeleineprak.github.io/unit-4-game/) to play it.
+This is a crystal collector game. Click [here](https://madeleineprak.github.io/Crystal-Collector/) to play it. 
 
 Tools utilized:
 * HTML
