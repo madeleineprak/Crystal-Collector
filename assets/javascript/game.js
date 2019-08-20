@@ -17,8 +17,8 @@ function setGame() {
     targetScore = Math.floor(Math.random()*120) + 19;
     $("#target-score").html(targetScore);
     $("#player-score").html(playerScore);
-    console.log(crystals);
-    console.log(targetScore);
+    // console.log(crystals);
+    // console.log(targetScore);
 }
 
 // Checks for a win/lose and alerts the user respectively.
